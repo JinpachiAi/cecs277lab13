@@ -23,7 +23,7 @@ class Task:
         returns a string used to display the task's information to the user
         :return:
         """
-        return self._desc + " Due: " + self._date + " at " + self._time
+        return self._desc + " - Due: " + self._date + " at " + self._time
 
     def __repr__(self):
         """
