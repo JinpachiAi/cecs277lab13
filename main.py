@@ -81,8 +81,11 @@ def main():
 
         # displays all tasks
         elif choice == 2:
-            for i,task in enumerate(task_manager):
-                print(f"{i+1}. {task}")
+            if not task_manager:
+                print("No tasks to display")
+            else:
+                for i,task in enumerate(task_manager):
+                    print(f"{i+1}. {task}")
 
         # sets current task to completed and displays next task
         elif choice == 3:
